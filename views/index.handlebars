@@ -8,13 +8,20 @@
     {{/unless}}
     {{/each}}
 </ul>
-<ul id="devoured">
+<div id="devoured">
     {{#each burgers}}
     {{#if devoured}}
-    <li>
+    <p>
         {{burger_name}}
-    </li>
+    </p>
     {{/if}}
     {{/each}}
 
-</ul>
+</div>
+<form class="create-form" data-newdevoured="0">
+    <div class="form-group">
+        <input type="text" id="burger" name="burger_name">
+        <label for="burger"></label>
+        <button type="submit">Submit</button>
+    </div>
+</form>
