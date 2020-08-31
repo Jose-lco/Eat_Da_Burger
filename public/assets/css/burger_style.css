@@ -1,9 +1,9 @@
-body{
+.background{
     background-color: bisque;
 }
 header{
     text-align: center;
 }
 #devoured{
-    text-align: right;
+    text-decoration: line-through;
 }

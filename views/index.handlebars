@@ -1,27 +1,40 @@
-<ul id="not-devoured">
-    {{#each burgers}}
-    {{#unless devoured}}
-    <li>
-        {{burger_name}}
-        <button class="change-devoured" data-id="{{id}}" data-newdevoured="true"> Devour It!</button>
-    </li>
-    {{/unless}}
-    {{/each}}
-</ul>
-<div id="devoured">
-    {{#each burgers}}
-    {{#if devoured}}
-    <p>
-        {{burger_name}}
-    </p>
-    {{/if}}
-    {{/each}}
-
-</div>
-<form class="create-form" data-newdevoured="0">
-    <div class="form-group">
-        <input type="text" id="burger" name="burger_name">
-        <label for="burger"></label>
-        <button type="submit">Submit</button>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <ul id="not-devoured">
+                {{#each burgers}}
+                {{#unless devoured}}
+                <li class="p-2">
+                    {{burger_name}}
+                    <button class="change-devoured" data-id="{{id}}" data-newdevoured="true"> Devour It!</button>
+                </li>
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-6">
+            <div id="devoured">
+                <ul>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    <li>
+                        {{burger_name}}
+                    </li>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
     </div>
-</form>
+    <div class="row">
+        <div class="col-12">
+            <form class="create-form text-center" data-newdevoured="0">
+                <div class="form-group">
+                    <input type="text" id="burger" name="burger_name">
+                    <label for="burger"></label>
+                </div>
+                    <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
