@@ -21,21 +21,7 @@ AS a restaurant owner I would like when a customer decides to eat at my restaura
 
 ## Installation
 
-1. The first step would be to clone the link of the repository. This can be done by clicking the green button on the top right of this repository.
-![Clone the repository](public/assets/img/672C1BBD-7724-43D3-8E25-5BF73B2D068E_1_105_c.jpeg)
-
-2. Go to your terminal on your computer and run this command in the folder that you would like to generate the README.
-```bash
-git clone https://github.com/Jose-lco/Eat_Da_Burger.git
-```
-3. Open the folder with the repository. The first thing you would do is to install the dependencies. In order to do this, you would run npm install in the command line.
-```
-npm install 
-``` 
-4. To officially run the application, run this in the command line:
-```bash
-node server.js
-```
+This app is deployed on Heroku: [Eat Da Burger](https://burgers-res.herokuapp.com/)
 ## Usage
 
 This is a restaurant app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured. Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page. Your app will store every burger in a database, whether devoured or not.
@@ -58,4 +44,4 @@ I used this repository to learn about badges:
 
 **This project was created by:**
 * Jose-lco [![HitCount](http://hits.dwyl.com/Jose-lco/Eat_Da_Burger.svg)](http://hits.dwyl.com/Jose-lco/Eat_Da_Burger)
-  * Contact info: [Linkedin profile](www.linkedin.com/in/josephine-ndungu-a0a441160)
+  * Contact info: [Linkedin profile](https://www.linkedin.com/in/josephine-ndungu-a0a441160)
